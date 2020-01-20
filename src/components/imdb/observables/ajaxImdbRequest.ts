@@ -2,6 +2,7 @@ import { ajax } from 'rxjs/ajax'
 import { retry, catchError } from 'rxjs/operators'
 
 import { API_IMDB } from '../const/urls'
+import { credentials } from '../../../credentials/imdb'
 
 export default (query:string) => {
   return ajax({
@@ -9,6 +10,7 @@ export default (query:string) => {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
+      ...credentials
     },
   }).pipe(
     retry(2),
