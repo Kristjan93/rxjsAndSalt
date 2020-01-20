@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/Cellar/node/13.4.0/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  13.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kristjanthorsteinsson/Desktop/animations/rxJsAndSalt/package.json: Unexpected token } in JSON at position 558
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "rxs-and-salt",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "webpack-dev-server --mode development"
+    },
+    "author": "Kristjan Patrekur",
+    "license": "ISC",
+    "dependencies": {
+      "rxjs": "^6.5.4",
+      "webpack-dev-server": "^3.9.0",
+      "css-loader": "^3.4.2",
+      "node-sass": "^4.13.0",
+      "sass-loader": "^8.0.1",
+      "style-loader": "^1.1.2",
+      "ts-loader": "^6.2.1",
+      "typescript": "^3.7.3",
+      "webpack": "^4.41.3",
+    },
+    "devDependencies": {
+      "webpack-cli": "^3.3.10",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
